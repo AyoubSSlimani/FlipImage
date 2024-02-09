@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="height: 100vh; width: 100vw ;display:flex; align-items: center; justify-content: center">
+    <div class="container">
+        <!-- CHARGEMENT IMAGE -->
+        <div>
+            <input type="file" name="file" id="file" accept="image/*">
+            
+        </div>
+        <!-- END CHARGEMENT IMAGE -->
+        <!-- TRAITEMENT IMAGE -->
+        <div class="image-container" style="display: none">
+
+            <img id="image" src="" alt="image" class="image">
+            <button type="button" class="left"><img src="./image/arrow.png" alt="arrow-left" ></button>
+            <button type="button" class="top"><img src="./image/arrow.png" alt="arrow-top"></button>
+            <button type="button" class="bottom"><img src="./image/arrow.png" alt="arrow-bottom"></button>
+            <button type="button" class="right"><img src="./image/arrow.png" alt="arrow-right"></button>
+        </div>
+        <!-- END TRAITEMENT IMAGE -->
+    </div>
+    <script src="FlipImage.js"></script>
+</body>
+</html>

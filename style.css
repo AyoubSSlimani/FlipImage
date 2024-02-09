@@ -1,0 +1,74 @@
+
+body {
+    overflow: hidden;
+}
+
+img[src="./image/arrow.png"]{
+    width: 48px;
+    height:48px;
+}
+
+.image {
+    aspect-ratio: initial;
+    object-fit: cover;
+}
+
+.right {
+    transform: rotate(180deg) translateX(50%);
+    top: 50%;
+    right: 0;
+}
+
+.top{
+    transform: rotate(90deg) translateX(50%);
+    top: 0;
+    left: 50%;
+}
+
+.bottom{
+    bottom: 0;
+    left: 50%;
+    transform: rotate(-90deg) translateX(50%);
+   
+}
+
+.left {
+    transform: translateX(50%);
+    left: 0;
+    bottom: 50%;
+}
+
+button {
+    cursor: pointer;
+    position: absolute;
+}
+
+
+@media screen and (max-width:768px) {
+    img[src="./image/arrow.png"]{
+        width: 24px;
+        height:24px;
+    }
+    .image {
+        width: 400px;
+        height: 200px;
+    }
+}
+
+
+.droite {
+    transform: rotate(90deg)
+}
+
+.gauche {
+    transform: rotate(-90deg)
+
+}
+
+.haut {
+ transform: rotate(0);
+}
+
+.bas {
+ transform: rotate(180deg);
+}
